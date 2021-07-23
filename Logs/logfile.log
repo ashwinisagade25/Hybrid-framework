@@ -137,3 +137,5 @@ login INFO : Verification with Valid Credentials is pass 2021-07-20 17:13:54,018
 test001_validRegister INFO : Login with valid credentials 2021-07-21 19:37:13,408
 login INFO : Verifying with Valid Credentials 2021-07-21 19:37:13,450
 login INFO : Verification with Valid Credentials is pass 2021-07-21 19:37:22,868
+test001_validlogin INFO : Verifying with Valid Credentials 2021-07-23 17:33:06,834
+test001_validlogin INFO : Verification with Valid Credentials is pass 2021-07-23 17:33:15,256
