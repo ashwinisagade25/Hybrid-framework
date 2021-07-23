@@ -1,5 +1,3 @@
-from selenium import webdriver
-import pytest
 from Utilities.BaseClass import Baseclass
 from PageObjects.Loginpage import LoginPage
 from Utilities.readProperties import ReadConfig
@@ -15,7 +13,7 @@ class Testlogin_valid(Baseclass):
         loginpage.setPassword(ReadConfig.getConfigData("password"))
         dashboardpage=loginpage.clickLogin()
         
-        assert loginpage.getPageTitle()=="ashboard / nopCommerce administration"
+        assert loginpage.getPageTitle()=="Dashboard / nopCommerce administration"
         self.logger.info("Verification with Valid Credentials is pass")
         
         dashboardpage.clickLogout()

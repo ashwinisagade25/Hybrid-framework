@@ -1,8 +1,7 @@
-from selenium import webdriver
+
 from selenium.webdriver.support.select import Select
-from selenium.webdriver.common.keys import Keys
-from select import select
-import time
+
+
 
 
 class AddCustomerPage:
@@ -66,7 +65,7 @@ class AddCustomerPage:
     def selectNewsletteroption(self,newsltropt):
         
         newsopt1=self.driver.find_element_by_xpath(self.list_newslwtteritem1_xpath).text
-        newsopt2=self.driver.find_element_by_xpath(self.list_newslwtteritem2_xpath).text
+        
         if newsltropt == newsopt1:
             self.driver.find_element_by_xpath(self.list_newslwtteritem1_xpath).click()
         else:
@@ -80,7 +79,7 @@ class AddCustomerPage:
         for r in roles:
             print(r.text)
             if r.text==role:
-                 self.driver.find_element_by_xpath(self.listopt_custroles_xpath+"[contains(text(),'"+role+"')]").click()   
+                self.driver.find_element_by_xpath(self.listopt_custroles_xpath+"[contains(text(),'"+role+"')]").click()   
     
     def selectVendorId(self,vendorid):
         print("vendor=",vendorid)

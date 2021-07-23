@@ -1,4 +1,4 @@
-from selenium import webdriver
+
 from PageObjects.Dashboardpage import DashboardPage
 
 class LoginPage:
