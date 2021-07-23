@@ -14,7 +14,8 @@ class Testlogin_valid(Baseclass):
         loginpage.setUserName(ReadConfig.getConfigData("username"))
         loginpage.setPassword(ReadConfig.getConfigData("password"))
         dashboardpage=loginpage.clickLogin()
-        assert loginpage.getPageTitle()=="Dashboard / nopCommerce administration"
+        
+        assert loginpage.getPageTitle()=="ashboard / nopCommerce administration"
         self.logger.info("Verification with Valid Credentials is pass")
         
         dashboardpage.clickLogout()

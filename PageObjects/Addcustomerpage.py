@@ -7,6 +7,7 @@ import time
 
 class AddCustomerPage:
     
+    link_expand_css="i.fa-plus"
     txtbx_email_id="Email"
     txtbx_password_id="Password"
     txtbx_fname_id="FirstName"
@@ -99,7 +100,12 @@ class AddCustomerPage:
     def verifySucceseMsg(self):
         return self.driver.find_element_by_css_selector(self.alert_successmsg_css).text
     
-    
+    def Isexpanded(self):
+        if self.driver.find_element_by_id(self.txtbx_email_id).is_displayed():
+            pass
+        else:
+            self.driver.find_element_by_css_selector(self.link_expand_css).click()
+        
         
     
               

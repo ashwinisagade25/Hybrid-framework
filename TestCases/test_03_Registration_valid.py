@@ -28,7 +28,7 @@ class TestRegister_valid(Baseclass):
         time.sleep(3)        
         logger.info("Registration with valid dataset")
         email=CommonUIMethods.randomGenerator(self)+"@gmail.com"
-        
+        addcustomer.Isexpanded()
         addcustomer.setEmail(email)
         
         password=ExcelUtility.readData(TestRegister_valid.path, "sheet1", 2, 1)
